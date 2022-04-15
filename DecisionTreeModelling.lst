@@ -1,0 +1,233 @@
+*------------------------------------------------------------*
+User:                u59416513
+Date:                14 April 2022
+Time:                19:56:55
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+ID           INTERVAL          1
+INPUT        INTERVAL          1
+INPUT        NOMINAL           8
+REJECTED     INTERVAL          1
+REJECTED     NOMINAL           1
+TARGET       NOMINAL           1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                     Number
+                      Measurement      of
+ Target      Event       Level       Levels      Order             Label
+ 
+REP_Class      1        NOMINAL         2      Descending    Replacement: Class
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type           Variable              Label
+ 
+TARGET       REP_Class       Replacement: Class
+PREDICTED    P_REP_Class1    Predicted: REP_Class=1
+RESIDUAL     R_REP_Class1    Residual: REP_Class=1
+PREDICTED    P_REP_Class0    Predicted: REP_Class=0
+RESIDUAL     R_REP_Class0    Residual: REP_Class=0
+FROM         F_REP_Class     From: REP_Class
+INTO         I_REP_Class     Into: REP_Class
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+                                                                                                                                     Ratio of
+                                           Number of                       Number of                                               Validation
+                                           Splitting                        Rules in           Relative         Validation        to Training
+Variable Name    Label                       Rules           Importance     CV Trees         Importance         Importance         Importance
+ 
+REP_deg_malig    Replacement: deg-malig        1                 1.0000        10                1.0000             1.0000             1.0000
+inv_nodes        inv-nodes                     1                 0.7967         7                0.6902             0.6991             0.8775
+ 
+ 
+ 
+Tree Leaf Report
+ 
+                                 Training
+Node               Training       Percent
+ Id     Depth    Observations        1
+ 
+  2       1           134          0.19
+  4       2            35          0.34
+  5       2            23          0.78
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=REP_Class Target Label=Replacement: Class
+ 
+   Fit
+Statistics    Statistics Label                Train    Validation
+ 
+  _NOBS_      Sum of Frequencies            192.000       85.000
+  _MISC_      Misclassification Rate          0.224        0.224
+  _MAX_       Maximum Absolute Error          0.806        0.806
+  _SSE_       Sum of Squared Errors          65.508       28.545
+  _ASE_       Average Squared Error           0.171        0.168
+  _RASE_      Root Average Squared Error      0.413        0.410
+  _DIV_       Divisor for ASE               384.000      170.000
+  _DFT_       Total Degrees of Freedom      192.000         .
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=REP_Class Target Label=Replacement: Class
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         77.5148       96.3235        131         68.2292
+  1          0         22.4852       67.8571         38         19.7917
+  0          1         21.7391        3.6765          5          2.6042
+  1          1         78.2609       32.1429         18          9.3750
+ 
+ 
+Data Role=VALIDATE Target Variable=REP_Class Target Label=Replacement: Class
+ 
+                       Target        Outcome     Frequency       Total
+Target    Outcome    Percentage    Percentage      Count      Percentage
+ 
+  0          0         78.0822         95            57         67.0588
+  1          0         21.9178         64            16         18.8235
+  0          1         25.0000          5             3          3.5294
+  1          1         75.0000         36             9         10.5882
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=REP_Class Target Label=Replacement: Class
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   38          131          5          18
+ 
+ 
+Data Role=VALIDATE Target=REP_Class Target Label=Replacement: Class
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+   16          57           3           9
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=REP_Class Target Label=Replacement: Class
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     168.323    2.68323      2.68323      78.2609      78.2609          10           0.78261
+  10     168.323    2.68323      2.68323      78.2609      78.2609          10           0.78261
+  15     137.129    1.67808      2.37129      48.9441      69.1626           9           0.48944
+  20     106.468    1.17551      2.06468      34.2857      60.2198          10           0.34286
+  25      89.796    1.17551      1.89796      34.2857      55.3571           9           0.34286
+  30      77.340    1.17551      1.77340      34.2857      51.7241          10           0.34286
+  35      61.044    0.66525      1.61044      19.4030      46.9710          10           0.19403
+  40      49.996    0.66525      1.49996      19.4030      43.7488           9           0.19403
+  45      40.401    0.66525      1.40401      19.4030      40.9504          10           0.19403
+  50      33.475    0.66525      1.33475      19.4030      38.9303           9           0.19403
+  55      27.159    0.66525      1.27159      19.4030      37.0881          10           0.19403
+  60      21.932    0.66525      1.21932      19.4030      35.5636          10           0.19403
+  65      17.943    0.66525      1.17943      19.4030      34.4000           9           0.19403
+  70      14.134    0.66525      1.14134      19.4030      33.2891          10           0.19403
+  75      11.158    0.66525      1.11158      19.4030      32.4212           9           0.19403
+  80       8.260    0.66525      1.08260      19.4030      31.5759          10           0.19403
+  85       5.715    0.66525      1.05715      19.4030      30.8336          10           0.19403
+  90       3.676    0.66525      1.03676      19.4030      30.2390           9           0.19403
+  95       1.646    0.66525      1.01646      19.4030      29.6468          10           0.19403
+ 100       0.000    0.66525      1.00000      19.4030      29.1667           9           0.19403
+ 
+ 
+Data Role=VALIDATE Target Variable=REP_Class Target Label=Replacement: Class
+ 
+                                                                                           Mean
+                               Cumulative        %       Cumulative      Number of      Posterior
+Depth       Gain      Lift        Lift       Response    % Response    Observations    Probability
+ 
+   5     155.000    2.55000      2.55000      75.0000      75.0000           5           0.78261
+  10     155.000    2.55000      2.55000      75.0000      75.0000           4           0.78261
+  15     146.282    2.26667      2.46282      66.6667      72.4359           4           0.67267
+  20     121.667    1.41667      2.21667      41.6667      65.1961           4           0.34286
+  25     103.485    1.41667      2.03485      41.6667      59.8485           5           0.34286
+  30      87.793    1.01489      1.87793      29.8497      55.2333           4           0.26844
+  35      70.929    0.61311      1.70929      18.0328      50.2732           4           0.19403
+  40      58.033    0.61311      1.58033      18.0328      46.4802           4           0.19403
+  45      45.633    0.61311      1.45633      18.0328      42.8331           5           0.19403
+  50      37.789    0.61311      1.37789      18.0328      40.5261           4           0.19403
+  55      31.280    0.61311      1.31280      18.0328      38.6118           4           0.19403
+  60      25.792    0.61311      1.25792      18.0328      36.9977           4           0.19403
+  65      20.035    0.61311      1.20035      18.0328      35.3044           5           0.19403
+  70      16.120    0.61311      1.16120      18.0328      34.1530           4           0.19403
+  75      12.695    0.61311      1.12695      18.0328      33.1455           4           0.19403
+  80       9.672    0.61311      1.09672      18.0328      32.2565           4           0.19403
+  85       6.360    0.61311      1.06360      18.0328      31.2823           5           0.19403
+  90       4.020    0.61311      1.04020      18.0328      30.5940           4           0.19403
+  95       1.911    0.61311      1.01911      18.0328      29.9737           4           0.19403
+ 100       0.000    0.61311      1.00000      18.0328      29.4118           4           0.19403
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=REP_Class Target Label=Replacement: Class
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.75-0.80       18           5         0.78261        11.9792
+ 0.30-0.35       12          23         0.34286        18.2292
+ 0.15-0.20       26         108         0.19403        69.7917
+ 
+ 
+Data Role=VALIDATE Target Variable=REP_Class Target Label=Replacement: Class
+ 
+ Posterior     Number                     Mean
+Probability      of      Number of     Posterior
+   Range       Events    Nonevents    Probability    Percentage
+ 
+ 0.75-0.80        9           3         0.78261        14.1176
+ 0.30-0.35        5           7         0.34286        14.1176
+ 0.15-0.20       11          50         0.19403        71.7647

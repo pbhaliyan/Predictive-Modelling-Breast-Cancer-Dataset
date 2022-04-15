@@ -1,0 +1,192 @@
+*------------------------------------------------------------*
+User:                u59416513
+Date:                14 April 2022
+Time:                20:00:23
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      NOMINAL          1
+ 
+ 
+ 
+ 
+ 
+                                                                                              BINNED_KS_
+                                                                     _KS_PROB_                   PROB_
+Obs     TARGET         TARGETLABEL        _AUR_    _GINI_     KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     REP_Class    Replacement: Class    0.688     0.376    0.33      0.195        0.33         0.343
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs     TARGET         TARGETLABEL        _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_Class    Replacement: Class     0.713     0.425     0.393     0.195      0.38      0.268
+ 
+ 
+ 
+ 
+ 
+                                                                                               BINNED_KS_
+                                                                      _KS_PROB_                   PROB_
+Obs     TARGET         TARGETLABEL        _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     REP_Class    Replacement: Class    0.789     0.577    0.447      0.346        0.433        0.367
+ 
+ 
+ 
+ 
+ 
+                                                                         _VKS_              _VBINNED_
+                                                                         PROB_     _VKS_     KS_PROB_
+Obs     TARGET         TARGETLABEL        _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_Class    Replacement: Class     0.697     0.395     0.417     0.346     0.417      0.364
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+                                                                     Train:                          Valid:
+                                                     Valid:         Average          Train:         Average
+Selected    Model                              Misclassification    Squared    Misclassification    Squared
+ Model      Node       Model Description              Rate           Error            Rate           Error
+ 
+   Y        Tree     Misclassification Tree         0.22353         0.17059         0.22396         0.16791
+            Reg      Logistic Regression            0.30588         0.15877         0.25000         0.20195
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: REP_Class
+ 
+Data Role=Train
+ 
+Statistics                                                           Tree        Reg
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff      0.343      0.367
+Train: Kolmogorov-Smirnov Statistic                                 0.330      0.447
+Train: Akaike's Information Criterion                                .       243.300
+Train: Average Squared Error                                        0.171      0.159
+Train: Roc Index                                                    0.688      0.789
+Train: Average Error Function                                        .         0.467
+Train: Cumulative Percent Captured Response                        27.950     28.571
+Train: Percent Captured Response                                   13.975     12.500
+Selection Criterion: Valid: Misclassification Rate                  0.224      0.306
+Train: Degrees of Freedom for Error                                  .       160.000
+Train: Model Degrees of Freedom                                      .        32.000
+Train: Total Degrees of Freedom                                   192.000    192.000
+Train: Divisor for ASE                                            384.000    384.000
+Train: Error Function                                                .       179.300
+Train: Final Prediction Error                                        .         0.222
+Train: Gain                                                       168.323    174.286
+Train: Gini Coefficient                                             0.376      0.577
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic               0.330      0.433
+Train: Kolmogorov-Smirnov Probability Cutoff                        0.195      0.346
+Train: Cumulative Lift                                              2.683      2.743
+Train: Lift                                                         2.683      2.400
+Train: Maximum Absolute Error                                       0.806      0.878
+Train: Misclassification Rate                                       0.224      0.250
+Train: Mean Square Error                                             .         0.191
+Train: Sum of Frequencies                                         192.000    192.000
+Train: Number of Estimate Weights                                    .        32.000
+Train: Root Average Squared Error                                   0.413      0.398
+Train: Cumulative Percent Response                                 78.261     80.000
+Train: Percent Response                                            78.261     70.000
+Train: Root Final Prediction Error                                   .         0.471
+Train: Root Mean Squared Error                                       .         0.436
+Train: Schwarz's Bayesian Criterion                                  .       347.540
+Train: Sum of Squared Errors                                       65.508     60.967
+Train: Sum of Case Weights Times Freq                                .       384.000
+ 
+ 
+Data Role=Valid
+ 
+Statistics                                                           Tree        Reg
+ 
+Valid: Kolmogorov-Smirnov Statistic                                 0.393      0.417
+Valid: Average Squared Error                                        0.168      0.202
+Valid: Roc Index                                                    0.713      0.697
+Valid: Average Error Function                                        .         0.810
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff      0.268      0.364
+Valid: Cumulative Percent Captured Response                        27.000     16.000
+Valid: Percent Captured Response                                   12.000      8.000
+Valid: Divisor for VASE                                           170.000    170.000
+Valid: Error Function                                                .       137.707
+Valid: Gain                                                       155.000     51.111
+Valid: Gini Coefficient                                             0.425      0.395
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic               0.380      0.417
+Valid: Kolmogorov-Smirnov Probability Cutoff                        0.195      0.346
+Valid: Cumulative Lift                                              2.550      1.511
+Valid: Lift                                                         2.550      1.700
+Valid: Maximum Absolute Error                                       0.806      1.000
+Valid: Misclassification Rate                                       0.224      0.306
+Valid: Mean Square Error                                             .         0.202
+Valid: Sum of Frequencies                                          85.000     85.000
+Valid: Root Average Squared Error                                   0.410      0.449
+Valid: Cumulative Percent Response                                 75.000     44.444
+Valid: Percent Response                                            75.000     50.000
+Valid: Root Mean Square Error                                        .         0.449
+Valid: Sum of Squared Errors                                       28.545     34.332
+Valid: Sum of Case Weights Times Freq                                .       170.000
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Valid: Misclassification Rate (_VMISC_)
+ 
+Model                              Data                                             False       True        False       True
+Node       Model Description       Role         Target         Target Label       Negative    Negative    Positive    Positive
+ 
+Tree     Misclassification Tree    TRAIN       REP_Class    Replacement: Class       38          131          5          18
+Tree     Misclassification Tree    VALIDATE    REP_Class    Replacement: Class       16           57          3           9
+Reg      Logistic Regression       TRAIN       REP_Class    Replacement: Class       36          124         12          20
+Reg      Logistic Regression       VALIDATE    REP_Class    Replacement: Class       19           53          7           6
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
